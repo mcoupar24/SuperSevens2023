@@ -42,7 +42,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'dir'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/SuperSevens2023'
+    workingDirectory: '$(build.artifactStagingDirectory)'
 
 - task: FtpUpload@2
   inputs:
