@@ -38,3 +38,15 @@ steps:
    PathtoPublish: $(build.artifactStagingDirectory)
    ArtifactName: drop
    publishLocation: Container
+
+- task: FtpUpload@2
+  inputs:
+    credentialsOption: inputs
+    serverUrl: 'ftps://access946069033.webspace-data.io'
+    UserName: 'u110665399'
+    password: 'P0pp1es73!!!!!'
+    rootDirectory: '$(build.artifactStagingDirectory)/drop'
+    filePatterns: '**'
+    remoteDirectory: '/u110665399'
+    preservePaths: true
+    trustSSL: true
