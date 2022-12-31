@@ -45,7 +45,7 @@ steps:
     serverUrl: 'ftps://access946069033.webspace-data.io'
     UserName: 'u110665399'
     password: 'P0pp1es73!!!!!'
-    rootDirectory: '$(System.DefaultWorkingDirectory)/_SuperSevens2023/drop'
+    rootDirectory: '$(build.artifactStagingDirectory)/_SuperSevens2023/drop'
     filePatterns: '**'
     remoteDirectory: '/u110665399'
     preservePaths: true
