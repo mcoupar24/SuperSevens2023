@@ -39,6 +39,11 @@ steps:
    ArtifactName: drop
    publishLocation: Container
 
+- task: CmdLine@2
+  inputs:
+    script: 'dir'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+
 - task: FtpUpload@2
   inputs:
     credentialsOption: inputs
