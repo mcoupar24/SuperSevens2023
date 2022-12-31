@@ -42,7 +42,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'dir'
-    workingDirectory: '$(System.DefaultWorkingDirectory)'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/SuperSevens2023'
 
 - task: FtpUpload@2
   inputs:
