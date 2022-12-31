@@ -45,6 +45,7 @@ steps:
 #    workingDirectory: '$(build.artifactStagingDirectory)'
 
 - task: FtpUpload@2
+  continueOnError: true
   inputs:
     credentialsOption: inputs
     serverUrl: 'ftps://access946069033.webspace-data.io'
