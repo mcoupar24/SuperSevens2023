@@ -55,4 +55,4 @@ steps:
     remoteDirectory: '/u110665399'
     preservePaths: true
     trustSSL: true
-    force: true
+    
